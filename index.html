@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>سعر اليوم | Price Yemen – أسعار الصرف والذهب في صنعاء وعدن</title>
+
+  <!-- AdSense (يُفعّل لاحقًا) -->
+  <!--
+  <script async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXX"
+    crossorigin="anonymous"></script>
+  -->
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="header">
+  <h1>
+    سعر اليوم
+    <span class="sub-title">Price Yemen</span>
+  </h1>
+
+  <div class="header-tools">
+    <span id="lastUpdate">آخر تحديث: —</span>
+    <button id="themeToggle">🌙</button>
+  </div>
+</header>
+
+<div class="ad ad-top">مساحة إعلان</div>
+
+<section class="section">
+  <h2>أسعار الصرف</h2>
+
+  <div class="tabs">
+    <button class="tab active" data-city="sanaa">صنعاء</button>
+    <button class="tab" data-city="aden">عدن</button>
+  </div>
+
+  <div id="ratesContainer" class="cards"></div>
+</section>
+
+<div class="ad">مساحة إعلان</div>
+
+<section class="section">
+  <h2>أسعار الذهب</h2>
+  <div id="goldContainer" class="cards"></div>
+</section>
+
+<div class="ad">مساحة إعلان</div>
+
+<section class="section">
+  <h2>الحاسبة</h2>
+
+  <div class="calculator">
+    <select id="calcCity">
+      <option value="sanaa">صنعاء</option>
+      <option value="aden">عدن</option>
+    </select>
+
+    <select id="calcType">
+      <option value="usd_to_yer">دولار → ريال يمني</option>
+      <option value="yer_to_usd">ريال يمني → دولار</option>
+      <option value="sar_to_yer">سعودي → ريال يمني</option>
+      <option value="yer_to_sar">ريال يمني → سعودي</option>
+      <option value="gold_gram">جرام ذهب 21</option>
+      <option value="gold_pound">جنيه ذهب</option>
+    </select>
+
+    <input type="number" id="calcAmount" placeholder="أدخل الكمية" />
+    <div id="calcResult" class="result">—</div>
+  </div>
+</section>
+
+<div class="ad ad-bottom">مساحة إعلان</div>
+
+<footer class="footer">
+  الأسعار المعروضة تمثل مؤشرات أسعار السوق المحلية اعتمادًا على بيانات منشورة من جهات مالية كبرى،
+  وقد تختلف من فرع لآخر.
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
